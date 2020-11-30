@@ -38,12 +38,15 @@ function App() {
 function Devocional({data}){
   return(
     <div className="devocion">
-        <h2 className="devTitle">{data.title}</h2>
+      <div className="devocion-content">
         <p className="devDate">{data.date}</p>
+        <h2 className="devTitle">{data.title}</h2>
         <p className="devVers">{data.vers}</p>
         <div className="devContent">
             {data.content.map((n,m) => <p key={m}>{n}</p>)}
         </div>
+        <h3>Feliz Dia!!!</h3>
+      </div>
     </div>
   );
 }
